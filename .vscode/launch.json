@@ -7,13 +7,9 @@
     {
       "name": "produtor_app",
       "request": "launch",
-      "type": "dart"
-    },
-    {
-      "name": "produtor_app (profile mode)",
-      "request": "launch",
       "type": "dart",
-      "flutterMode": "profile"
-    }
+      "program": "lib/main.dart",
+
+    },
   ]
 }
