@@ -1,11 +1,8 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:produtor_app/app/base/base_state_modular.dart';
-import 'package:produtor_app/app/base/base_stateful_modular.dart';
-import 'package:produtor_app/app/modules/home/home_store.dart';
-import 'package:produtor_app/app/utils/string_util.dart';
-import 'package:path/path.dart';
+import 'package:produtor_app/app/core/base/base_state_modular.dart';
+import 'package:produtor_app/app/core/base/base_stateful_modular.dart';
+import 'package:produtor_app/app/modules/home/home_controller.dart';
+import 'package:produtor_app/app/core/utils/string_util.dart';
 import 'package:stack_trace/stack_trace.dart' as stacktrace;
 
 class HomePage extends BaseModularStateful {
@@ -15,7 +12,7 @@ class HomePage extends BaseModularStateful {
   _HomePageState createState() => _HomePageState();
 }
 
-class _HomePageState extends BaseModularState<HomePage, HomeStore> {
+class _HomePageState extends BaseModularState<HomePage, HomeController> {
   @override
   bool get showBottomNaviationBar => true;
 

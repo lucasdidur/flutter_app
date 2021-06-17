@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:flutter_modular/flutter_modular.dart';
-import 'package:produtor_app/app/base/base_state_modular.dart';
-import 'package:produtor_app/app/base/base_stateful_modular.dart';
+import 'package:produtor_app/app/core/base/base_state_modular.dart';
+import 'package:produtor_app/app/core/base/base_stateful_modular.dart';
 
-import 'counter_store.dart';
+import 'counter_controller.dart';
 
 class CounterPage extends BaseModularStateful {
   const CounterPage({Key key}) : super(key: key, title: "Counter");
@@ -13,7 +12,7 @@ class CounterPage extends BaseModularStateful {
   _CounterPageState createState() => _CounterPageState();
 }
 
-class _CounterPageState extends BaseModularState<CounterPage, CounterStore> {
+class _CounterPageState extends BaseModularState<CounterPage, CounterController> {
   @override
   Widget builder(BuildContext context) {
     return Observer(

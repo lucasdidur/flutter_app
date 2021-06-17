@@ -1,12 +1,12 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
 import 'counter_page.dart';
-import 'counter_store.dart';
+import 'counter_controller.dart';
 
 class CounterModule extends Module {
   @override
   final List<Bind> binds = [
-    Bind.lazySingleton((i) => CounterStore()),
+    Bind.lazySingleton((i) => CounterController()),
   ];
 
   @override
